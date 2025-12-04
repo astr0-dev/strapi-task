@@ -17,7 +17,7 @@ export default {
             const settingsRoute = router.routes[settingsIndex];
             if (Array.isArray(settingsRoute.children)) {
                 settingsRoute.children = settingsRoute.children.filter(
-                    (child: any) =>
+                    (child) =>
                         typeof child.path !== 'string' || !child.path.startsWith('email')
                 );
             }
